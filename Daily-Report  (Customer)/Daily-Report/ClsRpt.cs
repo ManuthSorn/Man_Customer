@@ -65,22 +65,17 @@ namespace Daily_Report
 
             for (int i = 0; i <= ABC.Length - 1; i++)
             {
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 336590a9dc9a120045feee1872628f58994afec7
                 xlWorkSheet.Cells[1, i + 1] = ABC[i];
                 xlWorkSheet.Cells[1, i + 1].HorizontalAlignment = 3;
                 xlWorkSheet.Cells[1, i + 1].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
-                
+
                 xlWorkSheet.Cells[3, i + 1] = Header_Name[i];
                 xlWorkSheet.Cells[3, i + 1].HorizontalAlignment = 3;
                 xlWorkSheet.Cells[3, i + 1].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
                 xlWorkSheet.Cells[3, i + 1].WrapText = true;
                 xlWorkSheet.Cells[3, i + 1].VerticalAlignment = 2;
 
-<<<<<<< HEAD
 
 
                 int[] coloIdexO = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73 };
@@ -98,20 +93,6 @@ namespace Daily_Report
                     if (K >= 0)
                     {
                         xlWorkSheet.Cells[3, coloIdexB[K]].Interior.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(0, 176, 240)); // Set Color 'Blue to colume 1 of report by colum index'
-=======
-                int[] coloIdex = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73 };
-                for (int j=0;j<= coloIdex.Length-1; j++)
-                {
-                    if (j >= 41 && j <= 50)
-                    {
-                        xlWorkSheet.Cells[3, coloIdex[j]].Interior.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(0, 176, 240)); // Set Color 'Blue to colume 1 of report by colum index'
-                        
-                    }
-                    else
-                    {
-                        xlWorkSheet.Cells[3, coloIdex[j]].Interior.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(255, 192, 0)); // Set Color 'Orange to colume 1 of report by colum index'
-                      
->>>>>>> 336590a9dc9a120045feee1872628f58994afec7
                     }
                 }
             }
@@ -215,17 +196,10 @@ namespace Daily_Report
             }
             //Column in DB
             //int[] colidex = { 27, 28, 36, 37, 39, 40, 42, 43, 44, 45, 46, 47, 49, 4 };
-<<<<<<< HEAD
             int[] colidex = { 28, 29, 37, 38, 40, 41, 43, 44, 45, 46, 47, 48, 50, 4 };
             //Column in Daily-Report
             //int[] reportidex = { 4, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21 }; for old report
             int[] reportidex = { 4, 13, 15, 16, 27, 28, 39, 40, 51, 52, 63, 74, 75, 77 };
-=======
-            int[] colidex = { 28, 29, 32, 37, 38, 40, 41, 43, 44, 45, 46, 47, 48, 50, 4 };
-            //Column in Daily-Report
-            //int[] reportidex = { 4, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21 }; for old report
-            int[] reportidex = { 4, 13, 14, 15, 16, 27, 28, 39, 40, 51, 52, 63, 74, 75, 77 };
->>>>>>> 336590a9dc9a120045feee1872628f58994afec7
             int rowCnt = IDcode.Count - 1;
             for (int rowidex = IDcode.Count - 1; rowidex <= IDcode.Count - 1; rowidex--)
             {
@@ -240,13 +214,10 @@ namespace Daily_Report
                 {
                     xlWorkSheet.Cells[(rowCnt - rowidex) + 4, 14] = xlRange2.Cells[IDcode[rowidex], 33].Value2.ToString().Trim();
                 }
-<<<<<<< HEAD
                 if (xlRange2.Cells[IDcode[rowidex], 32].Value2.ToString().Trim() == "Completed Interview" || xlRange2.Cells[IDcode[rowidex], 32].Value2.ToString().Trim() == "Completed")
                 {
-                    xlWorkSheet.Cells[(rowCnt - rowidex) + 4, 14]= "Completed"; // Set text: " Completed"  to report.
+                    xlWorkSheet.Cells[(rowCnt - rowidex) + 4, 14] = "Completed"; // Set text: " Completed"  to report.
                 }
-=======
->>>>>>> 336590a9dc9a120045feee1872628f58994afec7
                 else
                 {
                     xlWorkSheet.Cells[(rowCnt - rowidex) + 4, 14] = xlRange2.Cells[IDcode[rowidex], 32].Value2.ToString().Trim();
@@ -260,17 +231,9 @@ namespace Daily_Report
 
                 for (int j = 1; j <= ABC.Length; j++) // Set Line In Data Report 77 colume by Case Count from Raw Data.
                 {
-<<<<<<< HEAD
                     //xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
                     xlWorkSheet.Cells[(rowCnt - rowidex) + 4, j].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
                 }
-=======
-
-                    xlWorkSheet.Cells[(rowCnt - rowidex) + 4, IDcode[rowidex]].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
-
-                    //xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
-                    xlWorkSheet.Cells[(rowCnt - rowidex) + 4, 26].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
->>>>>>> 336590a9dc9a120045feee1872628f58994afec7
 
                 for (int i = 0; i <= colidex.Length - 1; i++)
                 {
@@ -307,19 +270,9 @@ namespace Daily_Report
                             catch { }
                         }
                     }
-
-                    else if (i == 2) // i is conut from 0 [Arry list]
+                    else if (i == 2 || i == 4)
                     {
-                            if (xlRange2.Cells[IDcode[rowidex], colidex[i]].Value2.ToString().Trim() == "Completed Interview")
-                            {
-                                xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]] = "Completed";
-                            }
-                    }
-
-                    else if (i == 3 || i == 5)
-                    {
-                        if (xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() == "Completed Interview" && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() == "Completed Interview" && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() == "Completed Interview")
-                        //if (xlRange2.Cells[IDcode[rowidex], colidex[2]] != null && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2 != null && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() != "")
+                        if (xlRange2.Cells[IDcode[rowidex], colidex[2]] != null && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2 != null && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() != "")
                         {
                             if (xlRange2.Cells[IDcode[rowidex], colidex[i]].Value2.ToString().Trim() == "10 : extremely likely")
                             {
@@ -336,10 +289,9 @@ namespace Daily_Report
                             xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]].NumberFormat = "0";
                         }
                     }
-
-                    else if (i == 7)
+                    else if (i == 6)
                     {
-                        if (xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() == "Completed Interview" && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() == "Completed Interview" && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() == "Completed Interview")
+                        if (xlRange2.Cells[IDcode[rowidex], colidex[2]] != null && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2 != null && xlRange2.Cells[IDcode[rowidex], colidex[2]].Value2.ToString().Trim() != "")
                         {
                             if (xlRange2.Cells[IDcode[rowidex], colidex[i]].Value2.ToString().Trim() == "10 : Totally agree")
                             {
@@ -358,13 +310,26 @@ namespace Daily_Report
                     }
                     else if (i == colidex.Length - 1)
                     {
-
+                        //if (xlRange2.Cells[IDcode[rowidex], colidex[i]].Value2.ToString().Trim() == "C01")
+                        //{
+                        //    xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]] = 1;
+                        //}
+                        //else if (xlRange2.Cells[IDcode[rowidex], colidex[i]].Value2.ToString().Trim() == "C02")
+                        //{
+                        //    xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i] + 1] = 2;
+                        //}
+                        //else
+                        //{
+                        //    xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i] + 2] = 3;
+                        //}
                         xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]] = xlRange2.Cells[IDcode[rowidex], colidex[i]].Value2.ToString().Trim();
                         xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]].HorizontalAlignment = 3;
-                        xlWorkSheet.Cells[(rowCnt - rowidex) + 4, IDcode[rowidex]].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
-                     
-                      
-                        //xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
+                        //xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i] + 1].HorizontalAlignment = 3;
+                        //xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i] + 2].HorizontalAlignment = 3;
+                        xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
+                        //xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i] + 1].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
+                        //xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i] + 2].BorderAround(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThin, Excel.XlColorIndex.xlColorIndexAutomatic, Excel.XlColorIndex.xlColorIndexAutomatic);
+
                     }
                     else
                     {
@@ -378,7 +343,6 @@ namespace Daily_Report
                                 }
                                 else { xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]] = xlRange2.Cells[IDcode[rowidex], colidex[i]].Value2.ToString().Trim(); }
                             }
-                            /*
                             else
                             {
                                 if (i == 3)
@@ -394,7 +358,6 @@ namespace Daily_Report
                                     xlWorkSheet.Cells[(rowCnt - rowidex) + 4, reportidex[i]] = "";
                                 }
                             }
-                            */
                         }
                         else
                         {
@@ -415,10 +378,7 @@ namespace Daily_Report
             xlWorkSheet.Range["R:R"].Columns.AutoFit();
             xlWorkSheet.Range["V:V"].Columns.AutoFit();
             xlWorkSheet.Range["W:W"].Columns.AutoFit();
-<<<<<<< HEAD
             xlWorkSheet.Range["BY:BY"].Columns.AutoFit();
-=======
->>>>>>> 336590a9dc9a120045feee1872628f58994afec7
             //cleanup
             GC.Collect();
             GC.WaitForPendingFinalizers();
@@ -440,7 +400,9 @@ namespace Daily_Report
             Marshal.ReleaseComObject(xlApp2);
             try
             {
+                //xlWorkBook.CheckCompatibility = false;
                 xlApp.DisplayAlerts = false;
+                //xlWorkBook.DoNotPromptForConvert = true;
                 if (File.Exists(path))
                 {
                     File.Delete(path);
@@ -457,7 +419,7 @@ namespace Daily_Report
             Marshal.ReleaseComObject(xlWorkBook);
             Marshal.ReleaseComObject(xlApp);
             openfilePath = path;
-            MessageBox.Show("Daily-Report has been successful!!!.");
+            //MessageBox.Show("Daily-Report has been successful!!!.");
         }
     }
 }
