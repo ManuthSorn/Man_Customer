@@ -76,3 +76,16 @@ D:\IRL Project\2019\Manulife\New Version\Daily-Report - Updated (Customer) New H
 D:\IRL Project\2019\Manulife\New Version\Daily-Report - Updated (Customer) New Haew\Daily-Report\obj\Release\Daily-Report.csproj.CopyComplete
 D:\IRL Project\2019\Manulife\New Version\Daily-Report - Updated (Customer) New Haew\Daily-Report\obj\Release\Daily-Report.exe
 D:\IRL Project\2019\Manulife\New Version\Daily-Report - Updated (Customer) New Haew\Daily-Report\obj\Release\Daily-Report.pdb
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\bin\Release\Daily-Report.exe.config
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\bin\Release\Daily-Report.exe
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\bin\Release\Daily-Report.pdb
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\bin\Release\Microsoft.Office.Tools.Excel.v9.0.dll
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily-Report.csprojAssemblyReference.cache
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily-Report.exe.config
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily_Report.Form1.resources
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily_Report.Properties.Resources.resources
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily-Report.csproj.GenerateResource.cache
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily-Report.csproj.CoreCompileInputs.cache
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily-Report.csproj.CopyComplete
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily-Report.exe
+C:\Users\Manuth\Desktop\Man_Customer\Daily-Report  (Customer)\Daily-Report\obj\Release\Daily-Report.pdb
